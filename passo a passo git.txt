@@ -1,0 +1,7 @@
+Criou repositorio
+criou chave ssh e adicionou a chave no git
+clone do repositorio para a maquina
+adicionar codigo fonte dentro do repositorio
+criar o gitignore
+commit local (comando git commit)
+push (sincronização com o repositorio)
