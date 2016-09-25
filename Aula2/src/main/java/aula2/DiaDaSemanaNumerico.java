@@ -7,7 +7,7 @@ public class DiaDaSemanaNumerico {
 		Scanner input = new Scanner(System.in);
 		String diaEx = input.nextLine();
 		int dia = 0;
-		switch(diaEx){
+		switch(diaEx.toUpperCase()){
 		case "Segunda":
 			dia = 0;
 		}
