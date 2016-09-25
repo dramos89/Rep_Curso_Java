@@ -9,6 +9,10 @@ public class Utilidades {
 		continuar = true;
 	}
 	
+	Utilidades(){
+		
+	}
+	
 	String comparaNumero(int val1, int val2, int tent){
 		String mensagem = "";
 		if (val1 > val2){
@@ -25,6 +29,13 @@ public class Utilidades {
 		}
 	    continuar = ((qtdTent - tent) == 0);*/
 		return mensagem;
+	}
+	
+	void limpar(){
+	        for (int i = 0; i < 30; i++) {  
+	            System.out.println("\n");  
+	            System.out.flush();
+	        }
 	}
 	
     
