@@ -5,7 +5,7 @@ package aula2;
  *
  */
 public class Conta {
-	double Saldo;
+	private double Saldo;
 	/**
 	 * Constructor para iniciar a conta com saldo zerado
 	 */

@@ -38,9 +38,12 @@ public class Confrontos {
 	void processaPlacares(){
 		for (int x = 0; x < this.qtdConfrontos; x++){
 			for (int y = 0; y < this.qtdClubes; y++){
-				
+				for (int z = this.qtdClubes; z > 0; z--){
+					if (!(this.times[y].equals(this.times[z].nome))){
+						this.times[y].processaResultado(this.times[z].placar[x],x);
+					}
+				}
 			}
 		}
-	}
-	
+	}	
 }

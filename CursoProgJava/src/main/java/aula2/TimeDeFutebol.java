@@ -34,5 +34,13 @@ public class TimeDeFutebol {
 		this.saldoGol = this.golsPro - golsSofridos;
 	}
 	
+	void processaResultado(int golsSofridos, int posicao){
+		if (this.placar[posicao] == golsSofridos)
+			this.empates++;
+		else if (this.placar[posicao] > golsSofridos)
+			this.vitorias++;
+		else
+			this.derrotas++;
+	}
 	
 }

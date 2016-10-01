@@ -13,13 +13,7 @@ public class TestarConta {
 		//rotina de menu
 		do {
 			//util.limpar();
-			System.out.println("Escolha uma opção:");			
-			System.out.println("1. Sacar");
-			System.out.println("2. Depositar");
-			System.out.println("3. Saldo");
-			System.out.println("9. SAIR");
-			opcao = input.nextInt();
-			
+			menu(input);
 			//verifica a opção selecionada pelo usuario
 			switch(opcao){
 			case 1:{
@@ -44,5 +38,14 @@ public class TestarConta {
 			System.out.println("\n\n*****\n");
 		}while(opcao != 9);
 		input.close();
+	}
+	public static int menu(Scanner input){
+
+		System.out.println("Escolha uma opção:");			
+		System.out.println("1. Sacar");
+		System.out.println("2. Depositar");
+		System.out.println("3. Saldo");
+		System.out.println("9. SAIR");
+		return input.nextInt();
 	}
 }
