@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class TestarGaragem {
 	
 	public static void main(String[] args) {
-		GaragemComArrayList garagem = new GaragemComArrayList();
+		GaragemComArquivo garagem = new GaragemComArquivo();
 		Scanner input = new Scanner(System.in);
 		int opcao = menu(input);
 		while(opcao != 5){
